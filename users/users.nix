@@ -6,7 +6,7 @@ in {
   users.users = {
     "${username}" = {
       homeMode = "755";
-      hashedPassword = "$6$YdPBODxytqUWXCYL$AHW1U9C6Qqkf6PZJI54jxFcPVm2sm/XWq3Z1qa94PFYz0FF.za9gl5WZL/z/g4nFLQ94SSEzMg5GMzMjJ6Vd7.";
+      hashedPassword = "$6$MhH1/iCCjULUUD8s$q5Lkd2SR7e5bsVmAyeyEDk40Ynf/kC1Cj7MvcQUYQUk4GaA/O8yU65Vt6rezlcch5EVlLfVYWB.0hZs5Oup7A.";
       isNormalUser = true;
       description = "${gitUsername}";
       extraGroups = [ "networkmanager" "wheel" "libvirtd" ];

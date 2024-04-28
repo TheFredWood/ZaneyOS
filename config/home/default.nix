@@ -23,6 +23,8 @@
     ./zeroad.nix
     ./zsh.nix
 
+    ./tmux.nix
+    ./zoxide.nix
     # Place Home Files Like Pictures
     ./files.nix
   ];

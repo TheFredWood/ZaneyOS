@@ -18,11 +18,11 @@ in {
   flakeBackup = "/home/${setUsername}/.zaneyos-backup";
 
   # Git Configuration ( For Pulling Software Repos )
-  gitUsername = "John Smith";
-  gitEmail = "johnsmith@gmail.com";
+  gitUsername = "Frederik Haut";
+  gitEmail = "frederik.haut03@gmail.com";
 
   # Base16 Theme
-  theme = "atelier-cave";
+  theme = "3024";
 
   # Hyprland Settings
   borderAnim = true; # Enable / Disable Hyprland Border Animation
@@ -34,13 +34,13 @@ in {
 
   # System Settings
   clock24h = false;
-  theLocale = "en_US.UTF-8";
-  theKBDLayout = "us";
+  theLocale = "de_DE.UTF-8";
+  theKBDLayout = "de";
   theSecondKBDLayout = "de";
   theKBDVariant = "";
-  theLCVariables = "en_US.UTF-8";
-  theTimezone = "America/Chicago";
-  theShell = "bash"; # Possible options: bash, zsh
+  theLCVariables = "de_DE.UTF-8";
+  theTimezone = "Europe/Berlin";
+  theShell = "zsh"; # Possible options: bash, zsh
   theKernel = "zen"; # Possible options: default, latest, lqx, xanmod, zen
   sdl-videodriver = "x11"; # Either x11 or wayland ONLY. Games might require x11 set here
   # For Hybrid Systems intel-nvidia
@@ -68,7 +68,7 @@ in {
   browser = "firefox"; # Install & Set Default Browser
   terminal = "kitty";  # Set Default System Terminal
   distrobox = false;
-  flatpak = false;
+  flatpak = true;
   kdenlive = false;
   blender = false;
   enableZeroAD = false;

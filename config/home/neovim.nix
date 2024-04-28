@@ -7,13 +7,15 @@ in {
   programs.nixvim = {
     enable = true;
 
+    viAlias = true;
+    vimAlias = true;
     globals.mapleader = " "; # Sets the leader key to space
     
     opts = {
       clipboard="unnamedplus";
       number = true;         # Show line numbers
       relativenumber = true; # Show relative line numbers
-      shiftwidth = 2;        # Tab width should be 2
+      shiftwidth = 4;        # Tab width should be 2
       softtabstop = 2;
       smartindent = true;
       wrap = false;
@@ -191,6 +193,21 @@ in {
         key = "<space>fb";
         action = ":Telescope file_browser<CR>";
         options.noremap = true;
+      }
+      {
+        mode = "v";
+        key = "<leader>y";
+        action = "\"+y";
+      }
+      {
+        mode = "n";
+        key = "<leader>y";
+        action = "\"+y";
+      }
+      {
+        mode = "v";
+        key = "<leader>Y";
+        action = "\"+Y";
       }
       {
         key = "<Tab>";
