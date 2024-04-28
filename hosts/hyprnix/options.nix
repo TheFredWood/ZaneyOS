@@ -3,7 +3,7 @@
 # https://gitlab.com/Zaney/zaneyos/-/wikis/Setting-Options
 
 let
-  setUsername = "zaney";
+  setUsername = "frederik";
   setHostname = "hyprnix";
 in {
   # No Change Needed Below
@@ -18,18 +18,15 @@ in {
   flakeBackup = "/home/${setUsername}/.zaneyos-backup";
 
   # Git Configuration ( For Pulling Software Repos )
-  gitUsername = "Tyler Kelley";
-  gitEmail = "tylerzanekelley@gmail.com";
+  gitUsername = "John Smith";
+  gitEmail = "johnsmith@gmail.com";
 
   # Base16 Theme
-  theme = "gruvbox-light-hard";
+  theme = "atelier-cave";
 
   # Hyprland Settings
   borderAnim = true; # Enable / Disable Hyprland Border Animation
-  extraMonitorSettings = "
-    monitor=DP-1,2560x1440@165,0x0,1
-    monitor=HDMI-A-1,preferred,auto,1,transform,3
-  ";
+  extraMonitorSettings = "";
 
   # Waybar Settings
   waybarAnim = true; # Enable / Disable Waybar Animation CSS
@@ -48,8 +45,8 @@ in {
   sdl-videodriver = "x11"; # Either x11 or wayland ONLY. Games might require x11 set here
   # For Hybrid Systems intel-nvidia
   # Should Be Used As gpuType
-  cpuType = "amd";
-  gpuType = "amd";
+  cpuType = "intel";
+  gpuType = "intel";
 
   # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS! 
   intel-bus-id = "PCI:1:0:0";
@@ -65,16 +62,16 @@ in {
   localHWClock = false;
 
   # Enable Printer & Scanner Support
-  printer = false;
+  printer = true;
 
   # Program Options
   browser = "firefox"; # Install & Set Default Browser
   terminal = "kitty";  # Set Default System Terminal
   distrobox = false;
   flatpak = false;
-  kdenlive = true;
-  blender = true;
-  enableZeroAD = true;
+  kdenlive = false;
+  blender = false;
+  enableZeroAD = false;
 
   # Enable Support For
   # Logitech Devices
@@ -86,7 +83,7 @@ in {
   kitty = true;
 
   # Enable Python & PyCharm
-  python = true;
+  python = false;
   
   # Enable SyncThing
   syncthing = false;
