@@ -201,6 +201,12 @@ in with lib; {
       bind = ,XF86AudioPrev, exec, playerctl previous
       bind = ,XF86MonBrightnessDown,exec,brightnessctl set 5%-
       bind = ,XF86MonBrightnessUp,exec,brightnessctl set +5%
+
+      windowrulev2 = opacity 0.0 override,class:^(xwaylandvideobridge)$
+      windowrulev2 = noanim,class:^(xwaylandvideobridge)$
+      windowrulev2 = noinitialfocus,class:^(xwaylandvideobridge)$
+      windowrulev2 = maxsize 1 1,class:^(xwaylandvideobridge)$
+      windowrulev2 = noblur,class:^(xwaylandvideobridge)$
     '' ];
   };
 }

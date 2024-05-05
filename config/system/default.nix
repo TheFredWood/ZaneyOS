@@ -26,5 +26,7 @@
     ./steam.nix
     ./syncthing.nix
     ./vm.nix
+
+    ./displaylink.nix
   ];
 }

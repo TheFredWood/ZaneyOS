@@ -12,6 +12,7 @@ in {
     font-awesome spotify swayidle neovide swaylock 
 
     fzf sl gitui logisim-evolution libreoffice onedrive lazygit
+    oath-toolkit
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # Import Scripts
     (import ./../scripts/emopicker9000.nix { inherit pkgs; })
